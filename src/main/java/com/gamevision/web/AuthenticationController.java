@@ -24,10 +24,10 @@ public class AuthenticationController { //REGISTER AND LOGIN
     }
 
     //TODO: GetMapping - leave to front-end
-    @GetMapping("/users/register")
+  /*  @GetMapping("/users/register")
     public String register() {
         return "register";
-    }
+    } */
 
 
     //Keep this
@@ -79,11 +79,13 @@ public class AuthenticationController { //REGISTER AND LOGIN
 
     //==================================================================
 //Login - ONLY THIS GET, SS should handle the rest, no login in UserServiceImpl/AuthenticationService
-    @GetMapping("/users/login")
+
+    //TODO leave to front end
+  /*  @GetMapping("/users/login")
     public String login() {
 
         return "login";
-    }
+    } */
 //In SS config:
      //  .antMatchers(HttpMethod.POST, "/users/register", "/users/login").anonymous()
 
