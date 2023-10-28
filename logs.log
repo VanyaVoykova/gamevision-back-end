@@ -1,1 +1,79 @@
 2022-12-15 00:12:57.313  WARN 22440 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h57m10s789ms436µs200ns).
+2023-10-28 18:31:52.775  INFO 548 --- [restartedMain] com.gamevision.GamevisionApplication     : Starting GamevisionApplication using Java 18.0.2 on Asfaloth with PID 548 (C:\Studies\Programming\Java\Projects\Gamevision\gamevision-back-end\target\classes started by Vayanne in C:\Studies\Programming\Java\Projects\Gamevision\gamevision-back-end)
+2023-10-28 18:31:52.776  INFO 548 --- [restartedMain] com.gamevision.GamevisionApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-10-28 18:31:55.004  INFO 548 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-28 18:31:55.130  INFO 548 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-28 18:31:57.063  INFO 548 --- [restartedMain] com.gamevision.GamevisionApplication     : Started GamevisionApplication in 4.693 seconds (JVM running for 5.167)
+2023-10-28 18:31:57.148 DEBUG 548 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        count(*) as col_0_0_ 
+    from
+        genres genreentit0_
+2023-10-28 18:31:57.157 TRACE 548 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([col_0_0_] : [BIGINT]) - [10]
+2023-10-28 18:31:57.163 DEBUG 548 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        count(*) as col_0_0_ 
+    from
+        user_roles userroleen0_
+2023-10-28 18:31:57.167 TRACE 548 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([col_0_0_] : [BIGINT]) - [3]
+2023-10-28 18:31:57.169 DEBUG 548 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        count(*) as col_0_0_ 
+    from
+        users userentity0_
+2023-10-28 18:31:57.171 TRACE 548 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([col_0_0_] : [BIGINT]) - [2]
+2023-10-28 18:33:02.044 DEBUG 548 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        gameentity0_.id as id1_1_,
+        gameentity0_.added_by_id as added_by5_1_,
+        gameentity0_.description as descript2_1_,
+        gameentity0_.title as title3_1_,
+        gameentity0_.title_image_url as title_im4_1_ 
+    from
+        games gameentity0_
+2023-10-28 18:33:13.752 DEBUG 548 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        gameentity0_.id as id1_1_,
+        gameentity0_.added_by_id as added_by5_1_,
+        gameentity0_.description as descript2_1_,
+        gameentity0_.title as title3_1_,
+        gameentity0_.title_image_url as title_im4_1_ 
+    from
+        games gameentity0_ 
+    order by
+        gameentity0_.title asc limit ?
+2023-10-28 18:33:17.351 DEBUG 548 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        gameentity0_.id as id1_1_,
+        gameentity0_.added_by_id as added_by5_1_,
+        gameentity0_.description as descript2_1_,
+        gameentity0_.title as title3_1_,
+        gameentity0_.title_image_url as title_im4_1_ 
+    from
+        games gameentity0_
+2023-10-28 18:33:21.132 DEBUG 548 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        gameentity0_.id as id1_1_,
+        gameentity0_.added_by_id as added_by5_1_,
+        gameentity0_.description as descript2_1_,
+        gameentity0_.title as title3_1_,
+        gameentity0_.title_image_url as title_im4_1_ 
+    from
+        games gameentity0_ 
+    order by
+        gameentity0_.title asc limit ?
+2023-10-28 18:33:26.148 DEBUG 548 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        gameentity0_.id as id1_1_,
+        gameentity0_.added_by_id as added_by5_1_,
+        gameentity0_.description as descript2_1_,
+        gameentity0_.title as title3_1_,
+        gameentity0_.title_image_url as title_im4_1_ 
+    from
+        games gameentity0_
+2023-10-28 18:33:28.815  WARN 548 --- [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2023-10-28 18:33:33.328  WARN 548 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2023-10-28 18:33:37.187  WARN 548 --- [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2023-10-28 18:33:47.011  WARN 548 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2023-10-28 18:52:29.367  INFO 548 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-28 18:52:29.375  INFO 548 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
